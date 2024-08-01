@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ program_name }}</title>
+</head>
+<body>
+    <h1>{{ program_name }}</h1>
+    <img src="{{ url_for('static', filename=program_info.image) }}" alt="{{ program_name }}" style="width: 200px;">
+    <p>{{ program_info.description }}</p>
+    <a href="/antivirus_programs">돌아가기</a>
+</body>
+</html>
